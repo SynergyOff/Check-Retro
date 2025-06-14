@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cartoon Network 2013</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #222;
+      color: #000;
+    }
+    header {
+      background: white;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+    header img {
+      height: 60px;
+    }
+    nav {
+      background: #eee;
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+    }
+    #character-bar {
+      display: flex;
+      overflow-x: auto;
+      background: #000;
+      padding: 5px;
+    }
+    .char-icon {
+      width: 50px;
+      height: 50px;
+      margin: 0 3px;
+      border: 2px solid white;
+    }
+    #main {
+      background: #333;
+      padding: 20px;
+      min-height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    ruffle-player {
+      width: 600px;
+      height: 400px;
+    }
+    footer {
+      background: #111;
+      color: #ccc;
+      padding: 20px;
+      font-size: 12px;
+      text-align: center;
+    }
+    .section-title {
+      background: #444;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Cartoon_Network_2010_logo.svg" alt="Cartoon Network Logo">
+</header>
+
+<nav>
+  <a href="#">Games</a>
+  <a href="#">Shows</a>
+  <a href="#">Community</a>
+  <a href="#">Watch Video</a>
+</nav>
+
+<div id="character-bar">
+  <img src="https://i.imgur.com/hF9UpJp.png" class="char-icon" alt="Finn">
+  <img src="https://i.imgur.com/Uh0kx7a.png" class="char-icon" alt="Gumball">
+  <img src="https://i.imgur.com/bY4NOUK.png" class="char-icon" alt="Mordecai">
+</div>
+
+<div id="main">
+  <ruffle-player autoplay>
+    <source src="aSpaceShell.swf" type="application/x-shockwave-flash">
+  </ruffle-player>
+</div>
+
+<footer>
+  <p>Cartoon Network &copy; 2013 | Este sitio es una recreación de fans sin fines comerciales.</p>
+  <p>Hecho con ❤️ usando Ruffle para emular Flash.</p>
+</footer>
+
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+
+</body>
+</html>
